@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hip Hop Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFH-q9-SNq">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydm-tj-fnF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Myb-im-AyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="removeKeyboard" destination="2" eventType="editingDidEndOnExit" id="03Y-lZ-rvB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voy-0o-8L7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="REF-lP-2Fl"/>
+                                    <constraint firstAttribute="width" constant="275" id="d8j-Yw-3Ds"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-68-jcL">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitPressed:" destination="2" eventType="touchUpInside" id="Kvi-5G-XYr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-Tl-Yyx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Q3t-x0-yNM"/>
+                                    <constraint firstAttribute="width" constant="240" id="dqr-VR-2G0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lFH-q9-SNq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="9lF-u4-3Rq"/>
+                            <constraint firstItem="ydm-tj-fnF" firstAttribute="top" secondItem="ofY-Tl-Yyx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DqT-Rp-Jay"/>
+                            <constraint firstItem="FZa-68-jcL" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="108" id="Hdh-d9-cEt"/>
+                            <constraint firstItem="ydm-tj-fnF" firstAttribute="trailing" secondItem="voy-0o-8L7" secondAttribute="trailing" type="default" id="OLh-Sf-RqQ"/>
+                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="top" secondItem="voy-0o-8L7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SFg-iF-wFD"/>
+                            <constraint firstItem="voy-0o-8L7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="47" id="WXk-px-rYY"/>
+                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="centerX" secondItem="ydm-tj-fnF" secondAttribute="centerX" type="default" id="l8d-NJ-jqe"/>
+                            <constraint firstItem="voy-0o-8L7" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mlC-zT-a99"/>
+                            <constraint firstItem="lFH-q9-SNq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="vTJ-A8-Zx5"/>
+                            <constraint firstAttribute="bottom" secondItem="FZa-68-jcL" secondAttribute="bottom" constant="178" id="zMr-Zy-qBN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerApp" destination="ydm-tj-fnF" id="uT1-is-hIx"/>
+                        <outlet property="pictureApp" destination="ofY-Tl-Yyx" id="Dqf-BL-lGt"/>
+                        <outlet property="questionApp" destination="voy-0o-8L7" id="Ze8-Fn-z61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="removeKeyboard"/>
+                <relationship kind="action" name="submitPressed:"/>
+                <relationship kind="outlet" name="answerApp" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pictureApp" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="questionApp" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
