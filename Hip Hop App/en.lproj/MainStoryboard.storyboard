@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -58,16 +58,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lFH-q9-SNq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="9lF-u4-3Rq"/>
-                            <constraint firstItem="ydm-tj-fnF" firstAttribute="top" secondItem="ofY-Tl-Yyx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DqT-Rp-Jay"/>
-                            <constraint firstItem="FZa-68-jcL" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="108" id="Hdh-d9-cEt"/>
-                            <constraint firstItem="ydm-tj-fnF" firstAttribute="trailing" secondItem="voy-0o-8L7" secondAttribute="trailing" type="default" id="OLh-Sf-RqQ"/>
-                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="top" secondItem="voy-0o-8L7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SFg-iF-wFD"/>
-                            <constraint firstItem="voy-0o-8L7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="47" id="WXk-px-rYY"/>
-                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="centerX" secondItem="ydm-tj-fnF" secondAttribute="centerX" type="default" id="l8d-NJ-jqe"/>
-                            <constraint firstItem="voy-0o-8L7" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mlC-zT-a99"/>
-                            <constraint firstItem="lFH-q9-SNq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="vTJ-A8-Zx5"/>
-                            <constraint firstAttribute="bottom" secondItem="FZa-68-jcL" secondAttribute="bottom" constant="178" id="zMr-Zy-qBN"/>
+                            <constraint firstItem="FZa-68-jcL" firstAttribute="top" secondItem="3" secondAttribute="top" constant="214" id="3Nd-25-o57"/>
+                            <constraint firstItem="voy-0o-8L7" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="6hb-FR-X2c"/>
+                            <constraint firstItem="FZa-68-jcL" firstAttribute="centerX" secondItem="lFH-q9-SNq" secondAttribute="centerX" type="default" id="6ss-Gy-qxE"/>
+                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="54" id="Cfe-Rt-7eg"/>
+                            <constraint firstItem="voy-0o-8L7" firstAttribute="top" secondItem="lFH-q9-SNq" secondAttribute="top" type="default" id="Oco-mq-gfN"/>
+                            <constraint firstItem="ofY-Tl-Yyx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="Tha-Nw-Lcq"/>
+                            <constraint firstItem="ydm-tj-fnF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="182" id="TmD-Fv-c5t"/>
+                            <constraint firstItem="FZa-68-jcL" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="UFb-8q-tQk"/>
+                            <constraint firstItem="voy-0o-8L7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="fHW-ud-L3u"/>
+                            <constraint firstItem="ydm-tj-fnF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="28" id="kWd-G6-fw0"/>
                         </constraints>
                     </view>
                     <connections>

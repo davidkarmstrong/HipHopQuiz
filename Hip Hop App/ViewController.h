@@ -13,6 +13,7 @@
     UILabel *questionApp;
     UIImageView *pictureApp;
     UITextField *answerApp;
+    
 }
 
 
